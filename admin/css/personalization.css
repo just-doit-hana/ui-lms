@@ -1,0 +1,132 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Times New Roman";
+    box-sizing: border-box;
+}
+
+.title{
+    margin-bottom: 10px;
+    padding: 50px;
+    background-color: #252629;;
+    cursor: default;
+    max-width: auto;
+
+}
+
+.title h1{
+    font-size: 40px;
+    margin-top: -30px;
+    margin-bottom: 5px;
+    max-width: auto;
+    color: #FFFFFF;
+    float: left;
+}
+
+#title2{
+    font-size: 40px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.img img{
+	width: 25%;
+	padding: 15px 30px;
+	margin-left: 30px;
+	margin-right: 20px;
+	float:left;
+}
+
+#optional .btn-choose hr{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: inset;
+    border-width: 1px;
+    border-color: #f9f9f9;
+}
+
+#Profile-view hr{
+    border-style: inset;
+    border-width: 1px;
+    border-color: #f9f9f9;
+    margin-top: 10px;
+    margin-right: 500px;
+}
+
+#optional{
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#optional .btn-choose b{
+    font-size: 14px;
+    padding: 10px 10px;
+    margin-left: -10px;
+    cursor: pointer;
+}
+
+#Profile-view #Business-information #button button{
+    font-size: 18px;
+    margin-left: 600px;
+    cursor: pointer;
+    color: #36373c;
+    background-color: #ffd723;
+    border-color: #ffd723;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 5px 50px;
+}
+
+#Profile-view #Business-information{
+    overflow: hidden;
+    text-wrap: none;
+    text-overflow: ellipsis;
+    margin-bottom: auto;
+    box-sizing: border-box;
+    content: " ";
+    display: table;
+}
+
+#Profile-view #Business-information #Business-name{
+    font-size: 30px;
+    float: left;
+}
+
+#Profile-view #Business-information #Billing-address .material-icons{
+    font-size: 15px;
+    margin-top: 2px;
+
+}
+
+#Profile-view #Profile-information{
+    overflow: hidden;
+    text-wrap: none;
+    text-overflow: ellipsis;
+    margin-bottom: auto;
+    color: #89949b;
+    display: table;
+    box-sizing: border-box;
+}
+
+#Profile-view #Profile-information a{
+    color: #0091ff;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#Profile-view #Profile-information div{
+    padding: 10px 10px;
+    margin-left: -10px;
+    float: left;
+    width: 50%;
+    display: block;
+}

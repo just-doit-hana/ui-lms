@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap");
+:root {
+  --white-color: #fff;
+  --text-color: #36373c;
+}
+* {
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+.admin-title h3 {
+  font-size: 2rem;
+  font-weight: 100;
+  color: var(--text-color);
+  margin: 0;
+  margin-bottom: 36px;
+}
+.availability {
+  width: 900px;
+  height: 220px;
+  margin-bottom: 60px;
+  background-color: #faf2d4;
+  border-radius: 4px;
+  border: 1px solid #ffd723 ;
+}
+.availability-1{
+  width: 900px;
+  height: 220px;
+
+}
+.static-active  {
+  border: 1px solid #d0d9df;
+  margin: 0;
+  background-color: #fff;
+  height: 230px;
+  padding: 10px 5px;
+  text-align: center;
+  background-position-x: left ;
+  background-position-y:bottom ;
+  background-repeat: no-repeat;
+  background-size: 75%;
+}
+.active-course {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  margin: 10px 0;
+  color: #a0aaae;
+  font-weight: 390;
+  text-transform: capitalize;
+}
+.active-number{
+  font-size: 5rem;
+}
+.active-ground-1{
+  background-image: url(https://cdn.goskills.com/assets/images/business/statistics/active-courses.png);
+}
+.active-ground-2{
+  background-image: url(https://cdn.goskills.com/assets/images/business/statistics/courses-completed.png);
+}
+.active-ground-3{
+  background-image: url(https://cdn.goskills.com/assets/images/business/statistics/active-learners.png);
+}
+.active-ground-4{
+  background-image: url(https://cdn.goskills.com/assets/images/business/statistics/lessons-viewed.png);
+}
+.active-ground-5{
+  background-image: url(https://cdn.goskills.com/assets/images/business/statistics/lessons-completed.png);
+}
+.active-ground-6{
+  background-image: url(https://cdn.goskills.com/assets/images/business/statistics/time-spent.png);
+}
+
+.static-quick-link{
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #d0d9df;
+  background-color: #fff;
+  padding: 20px 10px;
+  color: #36373c;
+  text-align: center;
+  -webkit-box-shadow: 0 5px 5px 0 rgb(0 0 0 / 10%);
+  box-shadow: 0 5px 5px 0 rgb(0 0 0 / 10%);
+  margin: 10px 0;
+  height: 200px;
+  width: 48%;
+}
+.static-quick-link h3{
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.availability-content p{
+  word-wrap: break-word;
+  font-size: 1.2rem;
+  font-weight: 350;
+  color: var(--text-color);
+}
+.btn-view{
+    background-color: #ffd723;
+    padding-left: 2px;
+    padding-top: 12px;
+    min-width: 140px;
+    border: none;
+    /* margin: 61px; */
+    margin: -48px 217px;
+}
+
+.wrapper-availability{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.availability-img{
+    margin: 20px 50px;
+}
+.availability-img img{
+    width: 120px;
+    height: 120px;
+}
+.admin-latest{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  /* justify-content: space-between; */
+}
+.admin-msg{
+  margin-right: 638px;
+  font-size: 2.4rem;
+  font-weight: 390;
+  color: var(--text-color);
+  /* margin: 40px 0; */
+  /* margin-top: 30px; */
+}
+.admin-latest select{
+  padding: 15px;
+}
+.admin-content {
+  margin: 34px;
+}
+.admin-latest {
+  display: flex;
+}
+
+.wrapper-activity {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d0d9de;
+  box-shadow: 0 2px 2px #d0d9de;
+  width: 900px;
+  height: 100%;
+
+}
+.activity {
+  margin: 0 54px;
+}
+.activity-list{
+  list-style: none;
+  padding-left: 0;
+}
+.activity-item{
+  margin: 14px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.activity-msg{
+  color: #a0aaae;
+  font-size: 1.4rem;
+  font-weight: 390;
+  text-transform: capitalize;
+}
+.action{
+  margin-left: 130px;
+}
+.strong {
+  color :#0091ff; 
+  font-weight: 400;
+}

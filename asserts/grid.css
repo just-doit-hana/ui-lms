@@ -596,7 +596,11 @@
     }
 }
 
-
+:root {
+    --white-color: #fff;
+    --text-color: #36373c;
+  }
+  
 .btn {
     min-width: 124px;
     height: 36px;
@@ -612,4 +616,20 @@
     justify-content: center;
     align-items: center;
     line-height: 1.6rem;
+    
   }
+  .btn-viewcourse{
+    display: block;
+    /* background-color: #ffd723; */
+    min-width: 234px;
+    height: 42px;
+    border: 1px solid #2c2b2b;
+    box-shadow: 0 1px 2px #2c2b2b;
+    border-radius: 34px; 
+    outline: none;
+    text-align: center;
+    padding-top: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-color);
+}

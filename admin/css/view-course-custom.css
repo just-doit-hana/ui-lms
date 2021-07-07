@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap");
+:root {
+  --white-color: #fff;
+  --text-color: #36373c;
+}
+* {
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.course-background {
+  background-image: url(https://cdn.goskills.com/blobs/activities/3995/437a0d76-9e39-4de6-8958-7087e45df1f6.png);
+  width: 100%;
+  height: 244px;
+  -webkit-transition: background 0.15s linear;
+  -o-transition: background 0.15s linear;
+  transition: background 0.15s linear;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-position-y: top;
+  position: relative;
+}
+.back-link {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #399fff;
+}
+.wrapper-content {
+  margin-top: 40px;
+  margin-left: 140px;
+  position: relative;
+}
+.content {
+  width: 36%;
+  display: flex;
+  justify-content: space-between;
+}
+.content-left {
+  width: 100%;
+}
+.content-list {
+  list-style: none;
+  margin-top: 14px;
+}
+.content-item {
+  margin: 12px 0;
+}
+.content-item h3 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+.content-item p {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-weight: 400;
+  color: var(--text-color);
+  word-wrap: break-word;
+}
+
+/* COURSE PANEL  */
+.course-panel {
+  position: absolute;
+  right: 184px;
+  bottom: 16px;
+  /* border: 1px solid rgba(0, 0, 0, 0.06); */
+  box-shadow: 0 2px 2px #c9c6c6;
+}
+.panel-enrolment-1 {
+  width: 318px;
+  height: 255px;
+  background-color: #ffffff;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  /* margin: 0; */
+}
+.panel-course-2 {
+  width: 318px;
+  height: 255px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: #f9f9f9;
+}
+.panel-enrolment-1 a {
+  display: inline-block;
+}
+.panel-enrolment-1 ul {
+  list-style: none;
+  margin-top: 20px;
+}
+.panel-enrolment-1 li {
+  margin: 18px 0;
+}
+.panel-enrolment-1 h3 {
+  color: #89949b;
+  margin: 0;
+  margin-left: 14px;
+}
+
+.panel-content {
+  margin-left: 36px;
+  color: #89949b;
+}
+.panel-content h3 {
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+.panel-course-2 ul {
+  list-style: none;
+  margin-left: 10px;
+  margin-top: -28px;
+  padding: 24px;
+}
+.panel-course-2 li {
+  margin: 16px;
+}
