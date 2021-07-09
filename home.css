@@ -1,0 +1,633 @@
+/* =============================================== */
+
+/* Header  */
+
+header {
+  color: white;
+  padding: 19px 0 18px 0;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  transition: 0.5s;
+}
+
+.black {
+  background-color: #36373c;
+}
+#logoheader {
+  width: 20%;
+  height: 30px;
+  background: transparent
+    url(https://cdn.goskills.com/assets/images/logo/logo-combined-white.svg) 0 0
+    no-repeat;
+  background-size: auto 30px;
+  cursor: pointer;
+}
+
+.header_content {
+  display: flex;
+  margin-bottom: 0px !important;
+}
+
+.header_content nav ul li {
+  list-style: none;
+  display: inline;
+}
+
+.header_content nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 25px 15px;
+  font-size: 18px;
+  height: 70px;
+  font-weight: 400;
+}
+.header_content nav ul li a:hover {
+  color: #9d9d9d;
+  transition: 0.5s;
+}
+.loginButton {
+  outline: none !important;
+  margin-right: 5px;
+  padding: 8px 21px;
+  color: white;
+  background: none;
+  border: 2px solid;
+  border-radius: 25px;
+  font-size: 17px;
+}
+.right-header {
+  margin-left: 95px;
+}
+.signUpButton {
+  outline: none !important;
+  padding: 8px 21px;
+  color: black;
+  background: #ffd723;
+  border: 2px solid #ffd723;
+  border-radius: 25px;
+  font-size: 17px;
+  transition: 0.5s;
+}
+.signUpButton:hover {
+  background: #efc400;
+}
+/* =============================================== */
+
+/* Banner  */
+
+#carousel {
+  background: #7721f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://cdn.goskills.com/assets/images/home/banners/independence-day/illustration-animated-30s.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  text-align: center;
+}
+
+#carousel .testA {
+  margin-top: 215px;
+  font-size: 14px;
+  color: black !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: #ffd723;
+  border: 1px solid #ffd723;
+  outline: none;
+  padding: 13px 32px;
+  font-weight: 500;
+  border-radius: 31px;
+}
+#carousel button:hover {
+  background-color: #efc400;
+  color: black;
+}
+
+/* =============================================== */
+
+/* Seen  */
+#home-as-seen {
+  position: relative;
+  border-bottom: 1px solid #d0d9df;
+  height: 100px;
+  padding-top: 30px;
+}
+.seenTest {
+  text-align: center;
+}
+#home-as-seen .h4 {
+  color: #4d4f56;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+#home-as-seen img {
+  vertical-align: middle !important;
+}
+/* ================================================*/
+/* Course  */
+#course-all {
+  padding-top: 30px;
+}
+.course-title {
+  padding-bottom: 60px;
+}
+.course-first {
+  margin: 20px 0 20px 0;
+}
+
+.course-content {
+  font-size: 18px;
+  margin: 0 0 25px;
+}
+#home-course-tabs {
+  background-color: #f9f9f9;
+  padding-bottom: 60px;
+}
+.pill-row {
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+}
+.first-content {
+  outline: 0 !important;
+  padding-left: 18px;
+  padding-right: 18px;
+  color: #36373c;
+  background-color: #ffd723;
+  border-color: #ffd723;
+  display: inline-block;
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 99px;
+  user-select: none;
+  margin-bottom: 10px !important;
+  transition: color 0.15s linear, background-color 0.15s linear,
+    border-color 0.15s linear;
+}
+.first-content:hover {
+  text-decoration: none;
+  color: #36373c;
+  background-color: #efc400;
+}
+.next-content {
+  color: #89949b;
+  outline: 0 !important;
+  padding-left: 18px;
+  padding-right: 18px;
+  background-color: #fff;
+  border-color: #d0d9df;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid #d0d9df;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 99px;
+  user-select: none;
+  margin-bottom: 10px !important;
+  transition: color 0.15s linear, background-color 0.15s linear,
+    border-color 0.15s linear;
+}
+.next-content:hover {
+  text-decoration: none;
+  color: #89949b;
+}
+
+.card-img-top {
+  background-repeat: no-repeat;
+  height: 245px;
+  display: block !important;
+  width: 100%;
+  background: linear-gradient(120deg, #1a7154 0%, #44aa65 50%, #44aa65 100%);
+}
+.card-title {
+  text-align: left !important;
+  height: 42px;
+  font-size: 14px;
+  font-weight: 700;
+  max-width: 400px;
+  margin: 0 auto;
+  line-height: 1.5;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-content {
+  display: block;
+  height: 340px !important;
+  border-radius: 4px;
+  background-color: #fff;
+  max-width: 250px;
+  min-width: 250px;
+  margin: 0 20px;
+}
+.buttonViewCourse {
+  line-height: 25px;
+  padding-left: 18px;
+  padding-right: 18px;
+  outline: 0;
+  color: #36373c;
+  background-color: #ffd723;
+  border-color: #ffd723;
+  padding: 10px 16px;
+  font-size: 16px;
+  line-height: 1.3333333;
+  border-radius: 99px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.buttonViewCourse:hover{
+  text-decoration: none;
+  background-color: #efc400;
+  color: #36373c;
+ 
+}
+
+/* =============================================== */
+/* How it works  */
+#home-how-it-works {
+  padding-bottom: 60px;
+  padding-top: 30px;
+  position: relative;
+}
+.container {
+  margin-bottom: 40px;
+}
+.liinfor {
+  margin-bottom: 5px;
+  padding-top: 10px;
+  font-size: 18px;
+}
+/* =============================================== */
+
+/* Reply  */
+.replyPeople {
+  font-size: 18px;
+  margin: 0 0 25px;
+}
+.review-card {
+  width: 330px !important;
+  height: 300px;
+  text-align: left;
+  display: block !important;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.item-slide {
+  min-height: 275px;
+  padding: 10px;
+}
+.panel-shadow {
+  border-color: #d0d9df;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 30%);
+  transition: 0.3s;
+}
+.panel-shadow:hover {
+  box-shadow: 0 8px 16px 0 rgb(0 0 0 / 30%);
+}
+.panel {
+  border-bottom-width: 2px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.testimonial-author {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+.rating {
+  color: #ffd723;
+  margin: 0 0 10px;
+}
+
+.slick-next:before {
+  content: "→";
+  color: rgb(219, 219, 219);
+  font-size: 40px;
+}
+.slick-prev:before {
+  content: "←";
+  color: rgb(219, 219, 219);
+  font-size: 40px;
+}
+.slick-next {
+  right: 15%;
+  position: absolute !important;
+}
+.slick-prev {
+  left: 15%;
+  position: absolute !important;
+}
+.slick-prev,
+.slick-next {
+  top: -15%;
+  display: block;
+}
+/* =============================================== */
+
+/* Earned */
+#earned {
+  padding-top: 30px;
+  position: relative;
+  text-align: center;
+  background-color: #f8f9f9;
+}
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.award-card {
+  margin-top: 50px;
+}
+.award-card a {
+  color: #0091ff;
+  text-decoration: none;
+}
+.award-card a:focus,
+.award-card a:hover {
+  color: #0065b3;
+  text-decoration: underline;
+  outline: 0;
+}
+.award-body {
+  border: 1px solid #d0d9df;
+  border-radius: 5px;
+  min-height: 290px;
+  padding: 20px;
+}
+.award-image {
+  height: 150px;
+  position: relative;
+  bottom: 50px;
+}
+.award-text {
+  color: #36373c;
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+
+.btn.btn-outline.btn-primary {
+  font-size: 20px;
+  border-color: #ffd723;
+}
+.btn.btn-outline.btn-lg {
+  line-height: 21px;
+}
+.btn.btn-outline {
+  border: 2px solid;
+  background: 0 0;
+  outline: 0;
+}
+.btn.btn-lg {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.btn-primary {
+  color: #36373c;
+}
+.btn-primary:focus,
+.btn-primary:hover {
+  background-color: #ffd723;
+  color: #36373c;
+}
+.btn-group-lg > .btn,
+.btn-lg {
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 99px;
+}
+
+/* =============================================== */
+
+/* Start achieving */
+#home-start {
+  color: #f9f9f9;
+  height: 500px;
+  position: relative;
+  background: #1f0d6c;
+  background-image: url(https://cdn.goskills.com/assets/images/home/get-started.png),
+    linear-gradient(#1f0d6c, #1f0d6c);
+  background-size: auto 100%;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+.lead {
+  margin-bottom: 20px;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.4;
+  margin: 0 0 10px;
+}
+.formAround {
+  margin-top: 60px;
+}
+.formStyle {
+  display: -webkit-box;
+  margin: 20px 199px;
+}
+.form-control {
+  width: 80% !important;
+  padding: 25px !important;
+}
+.buttonStart {
+  color: #36373c !important;
+  background-color: #ffd723 !important;
+  border-color: #ffd723 !important;
+}
+
+/* =============================================== */
+
+/* Footer */
+#footer {
+  /* position: absolute; */
+  bottom: 60px;
+  width: 100%;
+  height: 677px;
+  overflow: hidden;
+}
+
+.footer {
+  background: #36373c;
+  color: #d0d9df;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#footer .foo {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.foo {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#footer .row {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#footer .h5 {
+  color: #ffd723;
+  border-bottom: 1px solid #57595f;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 24px;
+}
+.footer ul li {
+  margin: 0;
+}
+.footer a {
+  color: inherit;
+}
+#footer #footer-contact {
+  user-select: text;
+}
+#footer p {
+  font-size: 15px;
+  line-height: 29px;
+  max-width: 480px;
+
+  margin: 0 0 10px;
+}
+
+.social a.social-link {
+  color: #89949b;
+  font-size: 30px;
+  border: 1px solid #89949b;
+  text-align: center;
+  width: 38px;
+  height: 38px;
+  display: inline-block;
+  border-radius: 19px;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.social a.social-link svg {
+  display: block;
+  margin: 3px;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+.svg-icon {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  vertical-align: middle;
+  transition: color linear 0.15s;
+}
+.svg-icon:hover {
+  color: black;
+}
+
+.svg-icon circle,
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: currentColor;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 24px;
+}
+
+.m-top-xs {
+  margin-top: 5px !important;
+}
+
+#footer #footer-logo {
+  height: 30px;
+  margin: 30px 0 15px 0;
+  background: transparent
+    url(https://cdn.goskills.com/assets/images/logo/logo-combined-white.svg) 0 0
+    no-repeat;
+  background-size: auto 30px;
+}
+
+#footer #footer-newsletter {
+  margin: 30px 0 15px;
+}
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+.form-horizontal .form-group {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.control-label,
+label {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-block;
+  max-width: 100%;
+}
+
+#footer .form-control {
+  border-color: #57595f;
+  background-color: #4d4f56;
+  color: #fff;
+  font-size: 14px;
+}
+.buttonFoo {
+  border: 1px solid;
+  padding: 13px;
+  color: #36373c;
+  background-color: #efc400;
+  border-color: #efc400;
+  border-radius: 0 7px 7px 0 !important;
+}
+.buttonFoo:hover {
+  background-color: #f3d033;
+}

@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+
+<head>
+    <!-- meta -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5" />
+
+
+    <title>Create a course (1/2) | GoSkills</title>
+
+    <!-- favicon -->
+
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://cdn.goskills.com/assets/favicon/apple-touch-icon.png?v=1">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://cdn.goskills.com/assets/favicon/favicon-32x32.png?v=1">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://cdn.goskills.com/assets/favicon/favicon-16x16.png?v=1">
+    <link rel="manifest" href="https://cdn.goskills.com/assets/favicon/site.webmanifest?v=1">
+    <link rel="mask-icon" href="https://cdn.goskills.com/assets/favicon/safari-pinned-tab.svg?v=1" color="#36373c">
+    <link rel="shortcut icon" href="https://cdn.goskills.com/assets/favicon/favicon.ico?v=1">
+    <meta name="apple-mobile-web-app-title" content="GoSkills" />
+    <meta name="application-name" content="GoSkills" />
+    <meta name="msapplication-TileColor" content="#36373c" />
+    <meta name="msapplication-config" content="https://cdn.goskills.com/assets/favicon/browserconfig.xml?v=1">
+    <meta name="theme-color" content="#36373c" />
+    <!-- preconnects -->
+    <link href="https://cdn.goskills.com" rel="preconnect" crossorigin />
+    <link href="https://connect.facebook.net" rel="preconnect" />
+    <link href="https://www.google-analytics.com" rel="preconnect" />
+    <link href="https://stats.g.doubleclick.com" rel="preconnect" />
+
+    <!-- preloads -->
+    <link href="https://cdn.goskills.com/assets/fonts/icons/goskills-icons.woff2?1.25" rel="preload" as="font"
+        type="font/woff2" crossorigin /><!-- should match the version in less (for now) -->
+    <link href="https://cdn.goskills.com/assets/fonts/open-sans/v17-latin-ext/open-sans-300.woff2" rel="preload"
+        as="font" type="font/woff2" crossorigin />
+    <link href="https://cdn.goskills.com/assets/fonts/open-sans/v17-latin-ext/open-sans-400.woff2" rel="preload"
+        as="font" type="font/woff2" crossorigin />
+    <link href="https://cdn.goskills.com/assets/fonts/open-sans/v17-latin-ext/open-sans-400i.woff2" rel="preload"
+        as="font" type="font/woff2" crossorigin />
+    <link href="https://cdn.goskills.com/assets/fonts/open-sans/v17-latin-ext/open-sans-600.woff2" rel="preload"
+        as="font" type="font/woff2" crossorigin />
+    <link href="https://cdn.goskills.com/assets/fonts/open-sans/v17-latin-ext/open-sans-700.woff2" rel="preload"
+        as="font" type="font/woff2" crossorigin />
+    <link href="https://cdn.goskills.com/assets/fonts/lato/v16-latin-ext/lato-400.woff2" rel="preload" as="font"
+        type="font/woff2" crossorigin />
+    <link href="https://cdn.goskills.com/assets/fonts/lato/v16-latin-ext/lato-700.woff2" rel="preload" as="font"
+        type="font/woff2" crossorigin />
+    <link nonce="65430954455133039" href="https://cdn.goskills.com/assets/js/versioned/core.min.7aae2330b40895ca.js"
+        rel="preload" as="script" crossorigin />
+    <link nonce="65430954455133039" href="https://cdn.goskills.com/assets/js/versioned/charts.min.ae2d7d65181d0b0f.js"
+        rel="preload" as="script" crossorigin />
+    <link nonce="65430954455133039"
+        href="https://cdn.goskills.com/assets/js/versioned/logged-in.min.81e88145de15c4b9.js" rel="preload" as="script"
+        crossorigin />
+    <link nonce="65430954455133039"
+        href="https://cdn.goskills.com/assets/js/versioned/logged-in-area.min.b9ea2e63197f5985.js" rel="preload"
+        as="script" crossorigin />
+    <link nonce="65430954455133039"
+        href="https://cdn.goskills.com/assets/js/versioned/org-dashboard.min.6202db4d147c3048.js" rel="preload"
+        as="script" crossorigin />
+    <link nonce="65430954455133039" href="https://cdn.goskills.com/assets/js/versioned/carousel.min.3ce0640123b7f861.js"
+        rel="preload" as="script" crossorigin />
+
+
+    <!-- async/defer js only -->
+
+    <!-- css -->
+    <link href="https://cdn.goskills.com/assets/css/versioned/site.min.f835bbbea0c25900.css" rel="stylesheet"
+        type="text/css" />
+
+    <!-- meta extended -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="goskillscourses" />
+    <meta property="fb:app_id" content="421208471299647" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="GoSkills.com" />
+    <meta property="og:title" content="Create a course (1/2)" />
+    <meta property="og:description" />
+    <meta property="og:image" content="https://cdn.goskills.com/assets/images/social/og-image.png" />
+    <meta property="og:image:secure_url" content="https://cdn.goskills.com/assets/images/social/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:url" content="" />
+    <link rel="canonical" href="" />
+
+    <!-- google analytics -->
+    <script nonce="65430954455133039">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-38756906-1', {
+            'cookieDomain': 'www.goskills.com'
+            , 'userId': '427585'
+        });
+        ga('require', 'linkid', 'linkid.js');
+        ga('require', 'displayfeatures');
+    </script>
+    <!-- facebook -->
+    <script nonce="65430954455133039">
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            }; if (!f._fbq) f._fbq = n;
+            n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+        }(window,
+            document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '581739598638186');
+    </script>
+    <!-- hotjar -->
+    <!-- bing -->
+    <script nonce="65430954455133039">
+        (function (w, d, t, r, u) {
+            var f, n, i; w[u] = w[u] || [], f = function () {
+                var o = { ti: "25022041", disableAutoPageView: true };
+                o.q = w[u], w[u] = new UET(o), w[u].push("pageLoad")
+            }, n = d.createElement(t), n.src = r, n.async = 1,
+                n.onload = n.onreadystatechange = function () {
+                    var s = this.readyState; s && s !== "loaded" && s !== "complete" || (f(),
+                        n.onload = n.onreadystatechange = null)
+                }, i = d.getElementsByTagName(t)[0], i.parentNode.insertBefore(n, i)
+        })
+            (window, document, "script", "//bat.bing.com/bat.js", "uetq");
+    </script>
+
+
+</head>
+
+<body id="top" class=" language-en  org-dashboard " data-gamification-enabled="true" data-user-id="427585"
+    data-spam-token="FnFZX9sqvsgc0YjLGqI7j7MYx9JGukkf" data-version="4877638e" data-offset="420">
+
+
+
+    <div id="messages" data-spy="affix" class=" top-right "
+        data-reason-icons-container="https://cdn.goskills.com/assets/images/gamification/reasons"
+        data-notification-template="
+&lt;div class=&quot;goskills-notification-toast deferred auto-close gamified  &quot; data-notification-id=&quot;0&quot; &gt;
+    &lt;a href=&quot;#&quot; class=&quot;close&quot; aria-label=&quot;Close&quot;&gt;&lt;span class=&quot;icon-cancel-cute&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;div class=&quot;toast-img&quot;&gt;
+            &lt;img class=&quot;img&quot; src=&quot;https://cdn.goskills.com/assets/images/gamification/reasons/lessoncompleted.png&quot; /&gt;
+        &lt;/div&gt;
+
+    &lt;div class=&quot;toast-body&quot;&gt;
+        &lt;h4 class=&quot;notification-title&quot;&gt;Notification title&lt;/h4&gt;
+            &lt;div class=&quot;text-left&quot;&gt;
+                    &lt;img class=&quot;img coin-img &quot; src=&quot;https://cdn.goskills.com/assets/images/gamification/icon-coin-logo-xs.png&quot; /&gt;
+                &lt;span class=&quot;notification-subtitle &quot;&gt;Notification subtitle&lt;/span&gt;
+            &lt;/div&gt;
+
+    &lt;/div&gt;
+
+    &lt;div class=&quot;progress-bar hidden&quot;&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+" data-auto-close-duration="7000" data-auto-close-duration-gamified-toasts="5000"
+        data-error-image-url="https://cdn.goskills.com/assets/icons/icon-notification-error.svg"
+        data-success-image-url="https://cdn.goskills.com/assets/icons/icon-notification-success.svg">
+    </div>
+
+    <div id="page" class="organization activities create logged-in no-footer no-closure">
+        <div id="header">
+
+        </div>
+        <div id="content" style="">
+
+
+
+            <div class="container-fluid no-navigation" data-hj-masked>
+
+                <div class="od-content organization activities create" data-hj-masked>
+
+                    <div class="container">
+                        <div class="modal-page-nav">
+                            <a href="" class="back">
+                                <span class="icon-left-open-big"></span>Back
+                            </a>
+
+                            <a href="" class="close-page">
+                                <span class="icon-cancel-cuter"></span>Close
+                            </a>
+                        </div>
+                        <form action="" enctype="multipart/form-data" method="post"><input
+                                name="__RequestVerificationToken" type="hidden"
+                                value="M0A77CXSV7TOAb1WPob1xXLcVLLDSMc_jf9m9O_2wG8voK6rxSNQSVIV2bZC68Fg9FaG9KA_0LVnr37G8p61rZDsywTo7IFeLNw32NTTvB-xgZQZuQZo0IgGKO1r_cm2ODk-AM5FvuuZ82Vxqr0GXQ2" /><input
+                                id="OrgId" name="OrgId" type="hidden" value="6837" /><input id="ReturnUrl"
+                                name="ReturnUrl" type="hidden" value="" />
+                            <h1 class="wizard-heading">
+                                Create a course (1/2)
+                            </h1>
+                            <p class="h1">First, tell us about your course</p>
+
+                            <input data-val="true" data-val-required="The Type field is required." id="Activity_Type"
+                                name="Activity.Type" type="hidden" value="Classroom" />
+
+
+                            <div class="form-group">
+                                <label class="control-label" for="Activity_Name">Name</label>
+                                <div class="controls">
+                                    <input class="form-control" data-hj-masked="" data-val="true"
+                                        data-val-length="The field Name must be a string with a maximum length of 200."
+                                        data-val-length-max="200" data-val-required="The Name field is required."
+                                        id="Activity_Name" name="Activity.Name" type="text" value="" />
+                                    <span class="field-validation-valid help-block" data-valmsg-for="Activity.Name"
+                                        data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+
+
+
+                            <input data-val="true"
+                                data-val-length="The field Name to be displayed on qualifications report (optional) must be a string with a maximum length of 400."
+                                data-val-length-max="400" id="Activity_QualificationsName"
+                                name="Activity.QualificationsName" type="hidden" value="" />
+                            <input data-val="true"
+                                data-val-length="The field Course code must be a string with a maximum length of 50."
+                                data-val-length-max="50" id="Activity_Code" name="Activity.Code" type="hidden"
+                                value="" />
+
+
+                            <div id="activity-banner-image-chooser" class="form-group image-chooser">
+                                <label>Banner image</label>
+                                <p class="text-muted small">Supported formats: JPG, PNG. Minimum dimensions: 2000 x 350
+                                    px</p>
+
+                                <div id="banner-carousel" class="carousel carousel-light" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="item">
+                                            <div class="uploader"
+                                                data-defaultimage="https://cdn.goskills.com/assets/images/activity/default-banner.png">
+                                                <label class="image-label" title="Upload/replace image">
+                                                    <span class="image"
+                                                        style="background-image: url('https://cdn.goskills.com/assets/images/activity/default-banner.png');"></span>
+                                                    <span class="sr-only"><input type="file" name="BannerImage"
+                                                            class="image-input" autocomplete="off" /></span>
+                                                </label>
+                                                <div><span class="field-validation-valid" data-valmsg-for="BannerImage"
+                                                        data-valmsg-replace="true"></span></div>
+                                                <input data-val="true"
+                                                    data-val-number="The field BannerIndex must be a number."
+                                                    id="BannerIndex" name="BannerIndex" type="hidden" value="" />
+                                            </div>
+                                        </div>
+                                        <div class="item" data-index="0">
+                                            <span class="image"
+                                                style="background-image: url('https://www.goskills.com/static/activities/banners/default-1.png');"></span>
+                                        </div>
+                                        <div class="item" data-index="1">
+                                            <span class="image"
+                                                style="background-image: url('https://www.goskills.com/static/activities/banners/default-2.png');"></span>
+                                        </div>
+                                        <div class="item" data-index="2">
+                                            <span class="image"
+                                                style="background-image: url('https://www.goskills.com/static/activities/banners/default-3.png');"></span>
+                                        </div>
+                                        <div class="item" data-index="3">
+                                            <span class="image"
+                                                style="background-image: url('https://www.goskills.com/static/activities/banners/default-4.png');"></span>
+                                        </div>
+                                        <div class="item" data-index="4">
+                                            <span class="image"
+                                                style="background-image: url('https://cdn.goskills.com/assets/images/activity/default-banner.png');"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="m-top-sm">
+                                    <span class="btn btn-default image-remove">Revert to default</span>
+                                    <span class="btn btn-default image-custom">Upload custom image</span>
+                                </div>
+                            </div>
+
+
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div id="activity-icon-image-chooser" class="form-group image-chooser">
+                                        <label>Icon image</label>
+                                        <p class="text-muted small">Supported formats: JPG, PNG. Minimum dimensions: 150
+                                            x 150 px</p>
+
+                                        <div id="icon-carousel" class="carousel carousel-light" data-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="item">
+                                                    <div class="uploader"
+                                                        data-defaultimage="https://cdn.goskills.com/assets/images/activity/default-icon-classroom.png">
+                                                        <label class="image-label" title="Upload/replace image">
+                                                            <span class="image"
+                                                                style="background-image: url('https://cdn.goskills.com/assets/images/activity/default-icon-classroom.png');"></span>
+                                                            <span class="sr-only"><input type="file" name="IconImage"
+                                                                    class="image-input" autocomplete="off" /></span>
+                                                        </label>
+                                                        <div><span class="field-validation-valid"
+                                                                data-valmsg-for="IconImage"
+                                                                data-valmsg-replace="true"></span></div>
+                                                        <input data-val="true"
+                                                            data-val-number="The field IconIndex must be a number."
+                                                            id="IconIndex" name="IconIndex" type="hidden" value="" />
+                                                    </div>
+                                                </div>
+                                                <div class="item" data-index="0">
+                                                    <span class="image"
+                                                        style="background-image: url('https://www.goskills.com/static/activities/icons/icon-0.png');"></span>
+                                                </div>
+                                                <div class="item" data-index="1">
+                                                    <span class="image"
+                                                        style="background-image: url('https://www.goskills.com/static/activities/icons/icon-2.png');"></span>
+                                                </div>
+                                                <div class="item" data-index="2">
+                                                    <span class="image"
+                                                        style="background-image: url('https://www.goskills.com/static/activities/icons/icon-3.png');"></span>
+                                                </div>
+                                                <div class="item" data-index="3">
+                                                    <span class="image"
+                                                        style="background-image: url('https://www.goskills.com/static/activities/icons/icon-4.png');"></span>
+                                                </div>
+                                                <div class="item" data-index="4">
+                                                    <span class="image"
+                                                        style="background-image: url('https://cdn.goskills.com/assets/images/activity/default-icon-classroom.png');"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="m-top-sm">
+                                            <span class="btn btn-default image-remove">Revert to default</span>
+                                            <span class="btn btn-default image-custom">Upload custom image</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+
+
+                                </div>
+                            </div>
+
+                            <div class="row form-group">
+                                <div class="col-sm-12 m-bottom-sm m-top-sm">
+                                    <label>Gradient background</label>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="square gradient-purple-blue">
+                                        <input id="Activity_GradientClass" name="Activity.GradientClass" type="hidden"
+                                            value="" />
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 m-top-md">
+                                    <button type="button" class="btn btn-default block" data-toggle="modal"
+                                        data-target="#gradientModal" id="btn-gradient-chooser">
+                                        Change gradient
+                                    </button>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label class="control-label" for="Activity_Overview">Overview</label>
+                                <div class="controls">
+                                    <textarea class="form-control input-block-level " cols="8" data-hj-masked=""
+                                        id="Activity_Overview" name="Activity.Overview" rows="8">
+</textarea>
+                                    <span class="field-validation-valid help-block" data-valmsg-for="Activity.Overview"
+                                        data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label class="control-label" for="Activity_Prerequisites">Qualifying criteria
+                                    (optional)</label>
+                                <div class="controls">
+                                    <textarea class="form-control input-block-level " cols="8" data-hj-masked=""
+                                        id="Activity_Prerequisites" name="Activity.Prerequisites" rows="8">
+</textarea>
+                                    <span class="field-validation-valid help-block"
+                                        data-valmsg-for="Activity.Prerequisites" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label class="control-label" for="Activity_OtherInfo">Additional remarks
+                                    (optional)</label>
+                                <div class="controls">
+                                    <textarea class="form-control input-block-level " cols="8" data-hj-masked=""
+                                        id="Activity_OtherInfo" name="Activity.OtherInfo" rows="8">
+</textarea>
+                                    <span class="field-validation-valid help-block" data-valmsg-for="Activity.OtherInfo"
+                                        data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label" for="Availability_Type">Availability</label>
+                                <div class="controls">
+                                    <select class="form-control" data-hj-masked="" data-val="true"
+                                        data-val-required="The Availability field is required." id="Availability_Type"
+                                        name="Availability.Type">
+                                        <option value="0">Nobody</option>
+                                        <option selected="selected" value="1">Everybody</option>
+                                        <option value="2">Specific teams</option>
+                                    </select>
+                                    <span class="field-validation-valid help-block" data-valmsg-for="Availability.Type"
+                                        data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+
+
+                            <div id="activity-availability" class="hidden">
+                                <p class="text-muted small">Please select any teams this classroom course should be
+                                    available for:</p>
+                                <div class="row">
+
+                                    <div class="col-xs-6">
+                                        <p>Teams</p>
+                                        <ul class="blank">
+                                            <li class="checkbox">
+                                                <label class="checkbox-container">
+                                                    <input type="checkbox" name="Availability.OrgTagIds[]"
+                                                        value="4594" />
+                                                    <span class="checkmark"></span>
+                                                    back end
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <input data-val="true" data-val-required="The Status field is required."
+                                id="Activity_Status" name="Activity.Status" type="hidden" value="Active" />
+
+                            <div class="modal fade" id="gradientModal" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            <h4 class="modal-title text-center" id="exampleModalLabel">Select a gradient
+                                                below</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                                                    <div
+                                                        class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 m-top-sm m-bottom-sm">
+                                                        <div class="circle gradient-purple-blue selected"
+                                                            data-value="gradient-purple-blue">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 m-top-sm m-bottom-sm">
+                                                        <div class="circle gradient-pink-yellow"
+                                                            data-value="gradient-pink-yellow">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 m-top-sm m-bottom-sm">
+                                                        <div class="circle gradient-green-black"
+                                                            data-value="gradient-green-black">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 m-top-sm m-bottom-sm">
+                                                        <div class="circle gradient-yellow-green "
+                                                            data-value="gradient-yellow-green">
+                                                        </div>
+                                                    </div>
+
+                                                    <div
+                                                        class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 m-top-sm m-bottom-sm">
+                                                        <div class="circle gradient-yellow-orange"
+                                                            data-value="gradient-yellow-orange">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 m-top-sm m-bottom-sm">
+                                                        <div class="circle gradient-white-pink"
+                                                            data-value="gradient-white-pink">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 m-top-sm m-bottom-sm">
+                                                        <div class="circle gradient-yellow-blue"
+                                                            data-value="gradient-yellow-blue">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 m-top-sm m-bottom-sm">
+                                                        <div class="circle gradient-orange-red"
+                                                            data-value="gradient-orange-red">
+                                                        </div>
+                                                    </div>
+
+                                                    <div
+                                                        class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 m-top-sm m-bottom-sm">
+                                                        <div class="circle gradient-green-green"
+                                                            data-value="gradient-green-green">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 m-top-sm m-bottom-sm">
+                                                        <div class="circle gradient-gray-black"
+                                                            data-value="gradient-gray-black">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 m-top-sm m-bottom-sm">
+                                                        <div class="circle gradient-yellow-yellow"
+                                                            data-value="gradient-yellow-yellow">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 m-top-sm m-bottom-sm">
+                                                        <div class="circle gradient-white-gray"
+                                                            data-value="gradient-white-gray">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center">
+                                                    <h5 class="m-bottom-sm">Preview</h5>
+                                                    <div class="preview-card inline-block">
+                                                        <div
+                                                            class="od-course-card od-activity-card course-custom-card adminview internal card card bag-card m-bottom-md scorm">
+                                                            <div class="card-body bag-card-header text-center gradient-div gradient-purple-blue"
+                                                                data-gradient="gradient-purple-blue">
+                                                                <img src="https://cdn.goskills.com/assets/images/activity/card-icon-classroom-white.svg"
+                                                                    height="23" width="35"
+                                                                    class="pull-left m-top-sm m-left-xs">
+                                                                <span class="course-card-link gradient-link">
+                                                                    <span class="course-icon mx-auto"
+                                                                        id="card-icon-preview" height="151"
+                                                                        width="185"></span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="card-body bag-card-body text-left">
+                                                                <a class="course-card-link">
+                                                                    <div class="row-item">
+                                                                        <span title="" data-tooltip="true"
+                                                                            class="course-classroom-title card-title"
+                                                                            data-cpd="0"
+                                                                            data-original-title="Testing with gradient">
+                                                                            Activity name
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary btn-lg center-block"
+                                                    data-dismiss="modal" id="save-gradient-color">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="fixed-bottom text-center">
+                                <a class="btn btn-outline btn-default btn-lg m-right-lg" href="">Cancel</a>
+                                <input type="submit" class="btn btn-primary btn-lg" value="SAVE" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal fade" id="save-changes-modal" tabindex="-1" role="dialog"
+                        aria-labelledby="save-changes-title">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="save-changes-title">Discard changes?</h4>
+                                </div>
+                                <div class="modal-body">
+                                    It looks like you’ve made some changes. You can proceed and discard these changes,
+                                    or go back to continue with the form.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
+                                    <a id="discard-changes-confirm-button" href="#" data-ajax="false"
+                                        class="btn btn-danger">Discard</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <form id="__AjaxAntiForgeryForm" action="#" method="post" class="hidden"><input
+                    name="__RequestVerificationToken" type="hidden"
+                    value="8qJHHYqBpy6gYN-KpSV-yPElZ39CmibPR-4kkeRxMw3L929C0AX2lNwXuSAvT20FNwxI55rY7jHH5qsVL7gwsWM33rpQVjlM2SEdqckf6T389aW0oqvL6pHsLxV0ymY7aQCGFTlcFvxru0ZryRBLLQ2" />
+            </form>
+            <iframe name="downloadframe" class="hidden"></iframe>
+            <div id="feedback" class="hidden-xs">
+                <a href="#feedback" id="feedback-open" data-ajax="false" class="no-scroll" title="Give feedback"><span
+                        class="sr-only">Give feedback</span><svg class="svg-icon " xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 200 200">
+                        <path
+                            d="M124.87 77.29a9.43 9.43 0 01-.51-1.72 9 9 0 010-3.59 9.43 9.43 0 01.51-1.72 10 10 0 01.85-1.58 9.8 9.8 0 011.16-1.4 8.53 8.53 0 011.39-1.14 8.87 8.87 0 011.58-.84 8.47 8.47 0 011.71-.53 9.09 9.09 0 013.6 0 8.47 8.47 0 011.71.53 9.8 9.8 0 011.6.84 9.47 9.47 0 011.39 1.14 9.26 9.26 0 012.69 6.5 8.38 8.38 0 01-.19 1.79 9.43 9.43 0 01-.51 1.72 10 10 0 01-.85 1.58 9.07 9.07 0 01-2.55 2.54 8.87 8.87 0 01-1.58.84 9.19 9.19 0 01-1.71.54 10.2 10.2 0 01-3.6 0 9.19 9.19 0 01-1.71-.54 8.87 8.87 0 01-1.58-.84 8.53 8.53 0 01-1.39-1.14 9.18 9.18 0 01-1.16-1.4 10 10 0 01-.85-1.58zM65.32 106.26a9.18 9.18 0 019.18 9.19c0 11.13 11.54 20.21 25.72 20.21s25.72-9.08 25.72-20.21a9.19 9.19 0 1118.37 0c0 21.27-19.77 38.58-44.09 38.58s-44.09-17.31-44.09-38.58a9.2 9.2 0 019.19-9.19zM60.43 76.45a9.3 9.3 0 01-.51-1.73 8.53 8.53 0 010-3.58 9.77 9.77 0 01.51-1.73 10.39 10.39 0 01.84-1.58 11.1 11.1 0 011.16-1.39 7.75 7.75 0 011.4-1.14 8.59 8.59 0 011.58-.85 9.65 9.65 0 011.71-.53 9.09 9.09 0 013.6 0 9.65 9.65 0 011.71.53 8.36 8.36 0 011.57.85 8.51 8.51 0 011.4 1.14 9.47 9.47 0 011.14 1.39 9.57 9.57 0 01.84 1.58 9.81 9.81 0 01.52 1.73 9 9 0 010 3.58 9.33 9.33 0 01-.52 1.73 9.57 9.57 0 01-.82 1.55A9 9 0 0174 80.56a8.36 8.36 0 01-1.59.85 9.65 9.65 0 01-1.71.53 9.91 9.91 0 01-1.8.19 10.1 10.1 0 01-1.8-.19 9.65 9.65 0 01-1.71-.53 8.59 8.59 0 01-1.58-.85 7.75 7.75 0 01-1.4-1.14A9.83 9.83 0 0161.27 78a10.39 10.39 0 01-.84-1.55z" />
+                        <path
+                            d="M199 100a98.23 98.23 0 01-19.18 58.58A9.19 9.19 0 01165 147.71a80.64 80.64 0 10-27.41 23.62 9.19 9.19 0 018.6 16.24A99 99 0 11199 100z" />
+                    </svg></a>
+                <form action="/Business/Home/Happiness" id="feedback-form" method="post"><input
+                        name="__RequestVerificationToken" type="hidden"
+                        value="_uXTuqWTGSuTC8MzoPsRdl_YXzMvN4mGcjhfCzRAkjR8JKtFv4kZ5_UD-pi5-et8_vAAW327DB0M129BuNlHrOEL2VoHtM5REIyRswnzaGGl-llGOPPqVCB3H9LKItvO9XyDrEp5zwOccfKdJzW1AA2" />
+                    <input type="hidden" name="OriginalHappiness" value="" />
+                    <input type="hidden" name="Url" value="" />
+                    <input type="hidden" name="CourseId" />
+                    <input type="hidden" name="UnitId" />
+                    <input type="hidden" name="ModuleId" />
+                    <input type="hidden" name="ModuleVersionId" />
+                    <input type="hidden" name="BagId" />
+                    <div id="feedback-form-step-1">
+                        <p>How is your GoSkills experience?</p>
+                        <div class="icons">
+                            <span data-happiness="Positive" class="smile" title="Good"><svg class="svg-icon "
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                                    <path
+                                        d="M124.87 77.29a9.43 9.43 0 01-.51-1.72 9 9 0 010-3.59 9.43 9.43 0 01.51-1.72 10 10 0 01.85-1.58 9.8 9.8 0 011.16-1.4 8.53 8.53 0 011.39-1.14 8.87 8.87 0 011.58-.84 8.47 8.47 0 011.71-.53 9.09 9.09 0 013.6 0 8.47 8.47 0 011.71.53 9.8 9.8 0 011.6.84 9.47 9.47 0 011.39 1.14 9.26 9.26 0 012.69 6.5 8.38 8.38 0 01-.19 1.79 9.43 9.43 0 01-.51 1.72 10 10 0 01-.85 1.58 9.07 9.07 0 01-2.55 2.54 8.87 8.87 0 01-1.58.84 9.19 9.19 0 01-1.71.54 10.2 10.2 0 01-3.6 0 9.19 9.19 0 01-1.71-.54 8.87 8.87 0 01-1.58-.84 8.53 8.53 0 01-1.39-1.14 9.18 9.18 0 01-1.16-1.4 10 10 0 01-.85-1.58zM65.32 106.26a9.18 9.18 0 019.18 9.19c0 11.13 11.54 20.21 25.72 20.21s25.72-9.08 25.72-20.21a9.19 9.19 0 1118.37 0c0 21.27-19.77 38.58-44.09 38.58s-44.09-17.31-44.09-38.58a9.2 9.2 0 019.19-9.19zM60.43 76.45a9.3 9.3 0 01-.51-1.73 8.53 8.53 0 010-3.58 9.77 9.77 0 01.51-1.73 10.39 10.39 0 01.84-1.58 11.1 11.1 0 011.16-1.39 7.75 7.75 0 011.4-1.14 8.59 8.59 0 011.58-.85 9.65 9.65 0 011.71-.53 9.09 9.09 0 013.6 0 9.65 9.65 0 011.71.53 8.36 8.36 0 011.57.85 8.51 8.51 0 011.4 1.14 9.47 9.47 0 011.14 1.39 9.57 9.57 0 01.84 1.58 9.81 9.81 0 01.52 1.73 9 9 0 010 3.58 9.33 9.33 0 01-.52 1.73 9.57 9.57 0 01-.82 1.55A9 9 0 0174 80.56a8.36 8.36 0 01-1.59.85 9.65 9.65 0 01-1.71.53 9.91 9.91 0 01-1.8.19 10.1 10.1 0 01-1.8-.19 9.65 9.65 0 01-1.71-.53 8.59 8.59 0 01-1.58-.85 7.75 7.75 0 01-1.4-1.14A9.83 9.83 0 0161.27 78a10.39 10.39 0 01-.84-1.55z" />
+                                    <path
+                                        d="M199 100a98.23 98.23 0 01-19.18 58.58A9.19 9.19 0 01165 147.71a80.64 80.64 0 10-27.41 23.62 9.19 9.19 0 018.6 16.24A99 99 0 11199 100z" />
+                                </svg></span>
+                            <span data-happiness="Neutral" class="meh" title="Meh"><svg class="svg-icon "
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                                    <path
+                                        d="M142.36 75.57a8.75 8.75 0 01-1.36 3.3 8.51 8.51 0 01-1.14 1.4 10.65 10.65 0 01-1.39 1.14 9.8 9.8 0 01-1.6.84 9.19 9.19 0 01-1.71.54 9.8 9.8 0 01-1.8.16 9.18 9.18 0 01-9.18-9.18 9.88 9.88 0 01.18-1.79 8.14 8.14 0 01.53-1.72 8.67 8.67 0 012-3 8.53 8.53 0 011.39-1.14 8.87 8.87 0 011.58-.84 9 9 0 015.31-.54 9.19 9.19 0 011.71.54 8.4 8.4 0 011.6.84 9.47 9.47 0 011.39 1.14 8.51 8.51 0 011.14 1.4 10 10 0 01.85 1.58 9.43 9.43 0 01.51 1.72 8.57 8.57 0 010 3.59zM63.83 80.56a8.51 8.51 0 01-1.4-1.14 9.22 9.22 0 01-2.7-6.48 9 9 0 01.19-1.8 8.65 8.65 0 01.53-1.73 8.87 8.87 0 01.84-1.58 9.47 9.47 0 011.14-1.39 7.75 7.75 0 011.4-1.14 8.59 8.59 0 011.58-.85 9.5 9.5 0 011.72-.53 9 9 0 013.59 0 10 10 0 011.72.53 9.5 9.5 0 013 2 9.47 9.47 0 011.14 1.39 8.87 8.87 0 01.84 1.58 9.39 9.39 0 01.54 1.73 9.8 9.8 0 01.16 1.8 9.2 9.2 0 01-9.18 9.19 9.89 9.89 0 01-1.79-.19 9.5 9.5 0 01-1.72-.53 8.59 8.59 0 01-1.6-.86z" />
+                                    <path
+                                        d="M199 100a98.25 98.25 0 01-19.18 58.58A9.19 9.19 0 01165 147.69 79.91 79.91 0 00180.63 100a80.59 80.59 0 10-43 71.33 9.18 9.18 0 018.58 16.24A99 99 0 11199 100z" />
+                                    <path d="M65.1 120.21h68a9.19 9.19 0 010 18.37h-68a9.19 9.19 0 110-18.37z" />
+                                </svg></span>
+                            <span data-happiness="Negative" class="frown" title="Bad"><svg class="svg-icon "
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                                    <path
+                                        d="M124.87 77.29a9.93 9.93 0 01-.51-1.72 9 9 0 010-3.59 9.43 9.43 0 01.51-1.72 10 10 0 01.85-1.58 8.2 8.2 0 011.14-1.4 9.47 9.47 0 011.39-1.14 8.4 8.4 0 011.6-.84 8.5 8.5 0 011.71-.54 9.48 9.48 0 013.6 0 9.81 9.81 0 013.29 1.38 9.05 9.05 0 011.4 1.14 9.33 9.33 0 011.15 1.4 10.87 10.87 0 01.85 1.58 9.43 9.43 0 01.51 1.72 9.06 9.06 0 01-1.36 6.89 10.45 10.45 0 01-1.15 1.4 9.21 9.21 0 01-13 0 9.05 9.05 0 01-1.14-1.4 10 10 0 01-.84-1.58z" />
+                                    <path
+                                        d="M199 100a98.13 98.13 0 01-19.2 58.58 9.18 9.18 0 11-14.8-10.89A79.91 79.91 0 00180.63 100a80.61 80.61 0 10-43 71.33 9.19 9.19 0 018.59 16.24A99 99 0 11199 100z" />
+                                    <path
+                                        d="M56.13 144.84c0-21.27 19.79-38.58 44.09-38.58s44.09 17.31 44.09 38.58a9.19 9.19 0 11-18.37 0c0-11.15-11.54-20.2-25.72-20.2s-25.72 9-25.72 20.2a9.19 9.19 0 11-18.37 0zM60.43 76.45a9.3 9.3 0 01-.51-1.73 8.29 8.29 0 01-.19-1.78 9.18 9.18 0 012.7-6.5 7.75 7.75 0 011.4-1.14 8.59 8.59 0 011.58-.85 9.65 9.65 0 011.71-.53 9.34 9.34 0 018.3 2.52 8.53 8.53 0 011.14 1.39 9.57 9.57 0 01.84 1.58 9.33 9.33 0 01.52 1.73 9 9 0 010 3.58 9.33 9.33 0 01-.52 1.73 9.57 9.57 0 01-.84 1.55 9.47 9.47 0 01-1.14 1.39 9.26 9.26 0 01-6.5 2.69 8.54 8.54 0 01-1.8-.19 8.17 8.17 0 01-1.71-.51 8.59 8.59 0 01-1.58-.85 7.75 7.75 0 01-1.4-1.14A11.1 11.1 0 0161.27 78a10.39 10.39 0 01-.84-1.55z" />
+                                </svg></span>
+                        </div>
+                        <a href="/Contact">I need help</a>
+                    </div>
+                    <div id="feedback-form-step-2">
+                        <div class="form-group">
+                            <label class="sr-only">Comment</label>
+                            <textarea class="form-control" placeholder="Tell us more (optional)..." name="Message"
+                                data-hj-masked></textarea>
+                        </div>
+                        <p>
+                            <input type="submit" class="btn btn-primary" value="Send" />
+                            <span></span>
+                        </p>
+                    </div>
+                    <div id="feedback-form-step-3">
+                        <p>Your feedback has been sent</p>
+                        <p class="lead">Thank you</p>
+                    </div>
+                    <span class="close"><svg class="svg-icon " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                            <path
+                                d="M192.4 176.91A12.06 12.06 0 01175.34 194L100 118.62 24.64 194a12.06 12.06 0 01-17-17.05L84.5 100 7.59 23.11a12.06 12.06 0 0117.05-17L100 81.43l75.34-75.37a12.06 12.06 0 0117.06 17.05L115.51 100z" />
+                        </svg></span>
+                </form>
+            </div>
+            <div class="modal fade " id="goskills-level-up-modal" tabindex="-1" role="dialog"
+                data-level-icons-container="https://cdn.goskills.com/assets/images/gamification/levels/animated">
+                <div class="vertical-center-table">
+                    <div class="modal-dialog vertical-center-cell" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header no-border">
+                                <a href="#" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        class="icon-cancel-cuter"></span></a>
+                            </div>
+                            <div class="modal-body text-center">
+                                <h1 class="h2 title"></h1>
+
+                                <img class="level-img m-bottom-lg"
+                                    src="https://cdn.goskills.com/assets/images/gamification/levels/animated/topaz.svg" />
+
+                                <div class="message m-bottom-md">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer" class="footer hidden-xs">
+        </footer>
+        <div id="closure" class="footer closure">
+            <div class="container">
+                <a href="#top" id="top-link"><svg class="svg-icon " xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 200 200">
+                        <path
+                            d="M188.35 154.82a10.6 10.6 0 01-7.52-3.12L100 70.88 19.17 151.7a10.64 10.64 0 11-15-15l88.3-88.41a10.66 10.66 0 0115.06 0l88.35 88.36a10.65 10.65 0 01-7.53 18.17z" />
+                    </svg><span class="sr-only">Back to the top</span></a>
+                <p>&copy; 2021 GoSkills Ltd. <span class="hidden-xs">Skills for career advancement</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- js -->
+    <script nonce="65430954455133039" src="https://cdn.goskills.com/assets/js/versioned/core.min.7aae2330b40895ca.js"
+        crossorigin="anonymous"></script>
+    <script nonce="65430954455133039" src="https://cdn.goskills.com/assets/js/versioned/charts.min.ae2d7d65181d0b0f.js"
+        crossorigin="anonymous"></script>
+    <script nonce="65430954455133039"
+        src="https://cdn.goskills.com/assets/js/versioned/logged-in.min.81e88145de15c4b9.js"
+        crossorigin="anonymous"></script>
+    <script nonce="65430954455133039"
+        src="https://cdn.goskills.com/assets/js/versioned/logged-in-area.min.b9ea2e63197f5985.js"
+        crossorigin="anonymous"></script>
+    <script nonce="65430954455133039"
+        src="https://cdn.goskills.com/assets/js/versioned/org-dashboard.min.6202db4d147c3048.js"
+        crossorigin="anonymous"></script>
+    <script nonce="65430954455133039"
+        src="https://cdn.goskills.com/assets/js/versioned/carousel.min.3ce0640123b7f861.js"
+        crossorigin="anonymous"></script>
+
+    <script nonce="65430954455133039">window.goskills.translations = {
+            "ajax-generic-error": "Sorry! Something went wrong, please try again.",
+            "activity-launch-popup-warning": "You may have to allow pop-ups to launch this course.",
+            "delete-reservation-confirm": "Are you sure you want to delete the reservation?",
+            "profile-link-private-tooltip": "Make your profile public to enable sharing",
+            "profile-see-what-others-would": "See what others would see",
+            "profile-see-what-others": "See what others see",
+            "profile-tour-welcome-title": "Welcome to your GoSkills dashboard",
+            "profile-tour-welcome-description": "Let’s run you through what you can do here",
+            "profile-tour-start-action": "Start tour",
+            "profile-tour-continue-learning-msg": "Continue learning",
+            "profile-tour-continue-learning-desc": "Track your course progress and pick up where you left off from here.",
+            "profile-tour-add-courses-msg": "Add more courses",
+            "profile-tour-add-courses-desc": "Explore the training library to see more courses you can take.",
+            "profile-tour-manage-goal-msg": "Manage your daily study goal",
+            "profile-tour-manage-goal-desc": "Track your time spent learning and collect more GoSkills coins by achieving your goals.",
+            "profile-tour-daily-streak-msg": "Track your daily streak",
+            "profile-tour-daily-streak-desc": "Keep learning every day to unlock daily streak achievements.",
+            "profile-tour-gs-status-msg": "Track your GoSkills coins and status",
+            "profile-tour-gs-status-desc": "Collect GoSkills coins and move up status levels to enjoy more rewards.",
+            "course-reviews-error": "Oops, there was a problem loading these reviews. Please try again...",
+            "course-share-lesson": "Share this lesson",
+            "course-share-course": "Share this course",
+            "course-resume-test": "You can complete your test right here",
+            "course-resume-exam": "You can complete your exam right here",
+            "course-tour-lesson": "Click on a lesson to begin.",
+            "course-tour-tick": "Once you complete a lesson, you will receive a yellow tick. If you score 100% on the quiz, you will receive a green tick.",
+            "course-tour-tabs": "Change tabs to view your progress, time spent learning, test results, badges and certificates.",
+            "course-tour-progress": "Track your progress here.",
+            "course-tour-badges": "Finally, you will earn badges as you progress through the course. Thanks for taking our tour!",
+            "course-tour-settings": "Finally, you can access the tour again here. Thanks for taking our tour!",
+            "course-tour-end": "End tour",
+            "course-tour-skip": "Skip tour",
+            "course-tour-next": "Next",
+            "course-tour-later": "To take the tour later, click here.",
+            "course-tour-trial-1day": "You have 1 day left on your trial period.",
+            "course-tour-trial-days": "You have %0 days left on your trial period.",
+            "course-tour-take-again": "To take the tour again, click here.",
+            "course-progress-passed": "Quiz completed (scored 100%)",
+            "course-progress-completed": "Lessons completed",
+            "course-progress-viewed": "Lessons viewed",
+            "course-progress-all": "All lessons",
+            "course-progress-bar-incomplete": "You have completed %0 of %1 lessons.",
+            "course-progress-bar-complete": "You have completed %0 of %1 lessons and correctly answered all quiz questions!",
+            "course-progress-bar-unanswered": "You have completed %0 of %1 lessons, but still have some quiz questions incorrect or unanswered.",
+            "lesson-remove-note": "Remove note",
+            "test-invalid": "Invalid test",
+            "test-already-submitted": "This test has already been submitted. Please start a new test to continue.",
+            "test-go-to-profile": "Go to profile",
+            "test-question-progress": "Question %0 of %1",
+            "test-take": "Test me!",
+            "test-take-now": "Test me now!",
+            "test-take-first": "Take your first test!",
+            "test-incorrect": "Incorrect or don’t know",
+            "test-nearly": "Nearly correct",
+            "test-correct": "Correct",
+            "pagination-first": "First",
+            "pagination-last": "Last",
+            "pagination-previous": "Previous",
+            "pagination-next": "Next",
+            "learners-enrolled-in-class": "%0 of %1 seats.",
+            "course-report-completed": "Completed",
+            "course-report-started": "Started",
+            "course-report-total": "With access",
+            "selected-courses-count": "%0 courses selected",
+            "selected-course-count": "1 course selected",
+            "selected-learners-count": "%0 learners selected",
+            "selected-learner-count": "1 learner selected",
+            "selected-groups-count": "%0 teams selected",
+            "selected-group-count": "1 team selected",
+            "start-subscription": "Start subscription",
+            "start-and-update-subscription": "Update and start subscription",
+            "od-assign-select-all": "Select all courses",
+            "od-assign-clear-selection": "Clear selection",
+            "none": "None",
+            "active": "Active",
+            "inactive": "Inactive",
+            "day": "day",
+            "days": "days",
+            "gotit": "Got it",
+            "ok-stay-here": "OK, stay here",
+            "back-to-dashboard": "Go back"
+        };</script>
+
+
+
+
+    <!-- google analytics -->
+    <script nonce="65430954455133039" data-ajax-script="true">
+        if (typeof ga !== 'undefined') {
+            ga('set', {
+                page: "",
+                title: "Create a course (1/2) | GoSkills",
+                dimension1: "Member"
+            });
+            ga('send', 'pageview');
+        }
+    </script>
+
+    <!-- facebook -->
+    <script nonce="65430954455133039" data-ajax-script="true">
+        if (typeof fbq !== 'undefined') {
+            fbq('track', 'PageView');
+        }
+    </script>
+
+    <!-- bing -->
+    <script nonce="65430954455133039" data-ajax-script="true">
+        window.uetq = window.uetq || [];
+        window.uetq.push('event', 'page_view', { page_path: "" });
+    </script>
+    <script nonce="65430954455133039" src="/signalr/hubs"></script>
+</body>
+
+</html>
