@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap");
+:root {
+  --white-color: #fff;
+  --text-color: #36373c;
+}
+* {
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.details-description p {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  font-weight: 400;
+  margin-top: 10px;
+}
+.test {
+  margin-top: 45px;
+}
+/* .wrapper-lesson{
+    display: flex;
+    /* align-items: center; */
+/* justify-content: space-between; */
+/* } */
+.lesson-msg-1 p {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin: 10px 20px;
+}
+.media-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  border-bottom: 1px solid rgb(208, 206, 211);
+  align-items: center;
+}
+.media-wrapper:last-child{
+ 
+}
+.active{
+  background-color: rgb(0, 132, 255);
+}
+.wrapper-list {
+  list-style: none;
+  padding-left: 0;
+}
+.wrapper-item {
+  margin: 14px 20px;
+}
+
+.media-number {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+.media-content {
+  width: 560px;
+}
+.media-content a {
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: 390;
+  color: var(--text-color);
+}
+.media-time {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+.btn-download {
+  background-color: rgb(240, 240, 36);
+  width: 288px;
+  height: 60px;
+}
+.instructor {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  margin: 10px 20px;
+  border-bottom: 1px solid rgb(206, 198, 198);
+}
+.instructor-img {
+  margin-right: 20px;
+}
+.instructor-name h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+.instructor-name span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text-color);
+}
+.instructor-intro {
+  margin-left: 10px;
+  
+}
+.instructor-intro p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.instructor-icon{
+  display: flex;
+ margin-top: 20px;
+}
+.btn-icon{
+  font-size: 1.4rem;
+}
+.btn-face{
+margin: 0 24px;
+}
+.btn-twitter{
+  margin-right: 24px;
+}
+
+.btn-icon-1{
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .5rem 1rem;
+  border-radius: .25rem;
+  width: 10px;
+}
+.btn-light{
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  box-shadow: inset 0 1px 0 hsl(0deg 0% 100% / 15%), 0 1px 1px rgb(0 0 0 / 8%);
+}
+.times{
+  display: flex;
+  align-items: center;
+}
+.times h6{
+  margin: 0 10px;
+  font-size: 1.4rem;
+  color: rgb(179, 183, 187);
+  font-weight: 390;
+}
+.intro-icon i{
+  font-size: 1.4rem;
+  color: rgb(214, 124, 21);
+}
+.intro-icon{
+  margin: 4px 14px;
+}
